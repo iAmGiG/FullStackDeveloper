@@ -1,41 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MozDevNotes.css"/>
-    <title>Learning from the Mozilla Dev site</title>
-</head>
-<body>
-    <!-- On click/:focus example -->
-    <div><input class="Entree-input" value="Entree Order" /></div>
-    <div><input class="Side-input" value="Side Order or None" /></div>
-    <div><input class="Order-Name-input" value="Name for the order?" /></div>
-    <!-- Learn of to save inputs in cache for page refreshing. -->
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap');
 
-    <div class="preference">
-        <label for="Entree">Would you like to double the Meat?</label>
-        <input type="checkbox" name="cheese" id="cheese">
-    </div>
-    restaurant 
-    <div class="preference">
-        <label for="potatoes">Do you like potatoes?</label>
-        <input type="checkbox" name="potatoes" id="potatoes">
-    </div>
-    
-    <form>
-        <p>Which flavor would you like to order?</p>
-        <label>Full Name: <input name="firstName" type="text"></label>
-        <label>Flavor:
-            <select name="flavor">
-                <option>Cherry</option>
-                <option>Green Tea</option>
-                <option>Moose Tracks</option>
-                <option>Mint Chip</option>
-            </select>
-        </label>
-    </form>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-</body>
-</html>
+body{
+    background-color: whitesmoke;
+    font-family: 'Barlow Semi Condensed',
+    sans-serif;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+.preference {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0.5rem;
+}
+
+
+
+.red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+  }

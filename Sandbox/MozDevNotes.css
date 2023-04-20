@@ -21,6 +21,8 @@ body{
     margin: 0.5rem;
 }
 
+
+
 .red-input:focus {
     background: yellow;
     color: red;
