@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="OrderEntryFrontEndStyle.css"/>
+    <title>Learning from the Mozilla Dev site</title>
+</head>
+<body>
+    <div class="EnterOrder">
+    <!-- On click/:focus example -->
+        <div class="order Order-Entry">
+            <header class="card__header">
+                <i class="fa-solid fa-burger foodIcon1"alt="foodTitle"></i>
+                <div>
+                    <h3>
+                        Welcome to GiG's!
+                       <a href="">Menu Here</a>
+                    </h3>
+                    <p>Where Philly's come to you!</p>
+                </div>
+            </header>
+            <div class="card_form">
+                <!-- Learn of to save inputs in cache for page refreshing. -->
+                <form>
+                <p>Which  Philly Would you like?</p>
+                    <label>Full Name: <input name="firstName" type="text"></label>
+                    <label>Style:
+                        <select name="flavor">
+                            <option>Classic Philly</option>
+                            <option>Texas Style</option>
+                            <option>The mediterranean</option>
+                            <option>Make it a Wrap</option>
+                        </select>
+                    </label>
+                </form>
+                <div class="preference">
+                    <label for="Entree">Would you like to double the Meat?</label>
+                    <input type="checkbox" name="Meat" id="Meat">
+                    <label for="Toppings">Would you like to double the toppings?</label>
+                    <input type="checkbox" name="Toppings" id="Toppings">
+                </div>
+                <form>
+                    <p>Which Drink would you like to order?</p>
+                    <label>Flavor:
+                        <select name="Drink_flavor">
+                            <option>Coke</option>
+                            <option>Vanilla Coke </option>
+                            <option>Mellow Yellow</option>
+                            <option>Cherry Sprit</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            
+            <div>
+                Tips for the team help!
+                <input class="Custom Tip" value="[in $]"/>
+            </div> 
+            </div>
+    </div>
+    <footer>
+        <h3>
+            Restaurant Ordering project
+            <a href="">No link yet, add GitHub?</a>
+        </h3>
+    </footer>
+
+</body>
+</html>
