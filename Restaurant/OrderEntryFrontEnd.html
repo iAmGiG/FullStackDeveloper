@@ -15,7 +15,7 @@
 <body>
     <div class="EnterOrder">
     <!-- On click/:focus example -->
-        <div class="Order_Entry">
+        <div class="order_entry">
             <header class="card__header">
                 <i class="fa-solid fa-burger foodIcon1"alt="foodTitle"></i>
                 <div>
@@ -60,10 +60,12 @@
                 </form>
             </div>
             
-            <div>
-                Tips for the team help!
-                <input class="Custom Tip" value="[in $]"/>
-            </div> 
+                <div class="card_tail">
+                    <h4>Tips for the team help!</h4>
+                    <!-- the underlying can have an input text/number box, need to bind it above 0 so can't do negative tip-->
+                    <input class="Custom_Tip" type="number" placeholder="$" 
+                    onfocus="this.value==this.defaultValue?this.value='':null"/>
+                </div> 
             </div>
     </div>
     <footer>
