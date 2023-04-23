@@ -48,7 +48,7 @@ body{
 }
 
 .card__form{
-    display: grid;
+    display: flex;
     justify-self: center;
     align-self: center;
     font-size: 12px;
@@ -60,20 +60,44 @@ body{
 
 .card__form p{
     opacity: 100%;
+    size: 10rem;
+    padding: auto;
+    margin: auto;
 }
 
 .preference {
     display: flex;
     justify-content: space-between;
+    align-self: center;
     width: 60%;
     margin: 0.5rem;
 }
+
+.drink_flavor{
+    display: flex;
+    size: 10px;
+    justify-self: left;
+    align-self: center;
+    margin: 0.5rem;
+}
+
+.card_tail{
+    size: 10px;
+    margin-left: 15px;
+}
+
+.Custom_Tip{
+    size: 15px;
+    justify-self: center;
+    align-self: center;
+}
+
 
 /* body{
     font-size: 10px;
 } */
 
-/* footer{
+footer{
     font-size: 1px;
     text-align: center;
-} */
+}

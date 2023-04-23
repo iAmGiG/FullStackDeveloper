@@ -50,7 +50,7 @@
                 <form>
                     <p>Which Drink would you like to order?</p>
                     <label>Flavor:
-                        <select name="Drink_flavor">
+                        <select name="drink_flavor">
                             <option>Coke</option>
                             <option>Vanilla Coke </option>
                             <option>Mellow Yellow</option>
@@ -62,17 +62,19 @@
             
                 <div class="card_tail">
                     <h4>Tips for the team help!</h4>
-                    <!-- the underlying can have an input text/number box, need to bind it above 0 so can't do negative tip-->
-                    <input class="Custom_Tip" type="number" placeholder="$" 
+                    <!--The following will have an input number box, 
+                        need to bind it above 0 so can't do negative tip 
+                        and have a stepping of 0.5-->
+                    <input class="Custom_Tip" type="number" placeholder="$" min="0" step="0.5"
                     onfocus="this.value==this.defaultValue?this.value='':null"/>
                 </div> 
             </div>
     </div>
     <footer>
-        <h3>
+        <h5>
             Restaurant Ordering project
             <a href="">No link yet, add GitHub?</a>
-        </h3>
+        </h5>
     </footer>
 
 </body>
