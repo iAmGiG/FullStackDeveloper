@@ -54,8 +54,11 @@ body{
     font-size: 12px;
 }
 
-.card__form form{
-
+.card__form{
+    opacity: 100%;
+    size: 10rem;
+    padding: auto;
+    margin: auto;
 }
 
 .card__form p{
