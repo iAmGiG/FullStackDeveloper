@@ -13,69 +13,71 @@
     <title>Learning from the Mozilla Dev site</title>
 </head>
 <body>
-    <div class="EnterOrder">
-    <!-- On click/:focus example -->
+    <div class="enter_order">
         <div class="order_entry">
             <header class="card__header">
                 <i class="fa-solid fa-burger foodIcon1"alt="foodTitle"></i>
                 <div>
-                    <h2>
-                        Welcome to GiG's!
-                     </h2>
-                    <p>Where Philly's come to you!
-                        <a href="">Menu Here</a>
-                    </p>
+                    <h2>Welcome to GiG's!</h2>
+                    <p>Where Philly's come to you!<a href="">Menu Here</a></p>
                 </div>
             </header>
-            <div class="card__form">
-                <!-- Learn of to save inputs in cache for page refreshing. -->
-                <form>
-                <p>Which Philly Would you like?</p>
-                    <label>Full Name: <input name="firstName" type="text"></label>
-                    <label>Style:
-                        <select name="flavor">
-                            <option>Classic Philly</option>
-                            <option>Texas Style</option>
-                            <option>The mediterranean</option>
-                            <option>Make it a Wrap</option>
-                        </select>
-                    </label>
-                </form>
-                <div class="preference">
-                    <label for="Entree">Would you like to double the Meat?</label>
-                    <input type="checkbox" name="Meat" id="Meat">
-                    <label for="Toppings">Would you like to double the toppings?</label>
-                    <input type="checkbox" name="Toppings" id="Toppings">
+            <main>
+                <div class="card__form">
+                    <!-- Learn of to save inputs in cache for page refreshing. -->
+                    <form name="philly__entree">
+                    <p>Which Philly Would you like?</p>
+                        <label>Full Name: <input name="firstName" type="text"></label>
+                        <label>Philly Style:
+                            <select id="entree" name="Entree">
+                                <option>Classic Philly</option>
+                                <option>Texas Style</option>
+                                <option>The mediterranean</option>
+                                <option>Make it a Wrap</option>
+                            </select>
+                            <br>Super Size Me!<br>
+                            <input type="checkbox" value="Super Size Me!">
+                        </label>
+                    </form>
+                    <div class="upside__preference">
+                        <label for="Entree">Would you like to double the Meat?</label>
+                        <input type="checkbox" name="Meat" id="Meat">
+                        <label for="Toppings">Would you like to double the toppings?</label>
+                        <input type="checkbox" name="Toppings" id="Toppings">
+                    </div>
+                    <form name="side__entry">
+                        <p>Which Side would you like?</p>
+                        <label>Side:
+                            <select name="Side">
+                                <option>Curly fry's</option>
+                                <option>Mozzarella Sticks</option>
+                                <option>Jalapeno bits</option>
+                                <option>Loaded BLT Salad</option>
+                            </select>
+                        </label>
+                    </form>
+                    <form name="drink__entry">
+                        <p>Which Drink would you like to order?</p>
+                        <label>Drink:
+                            <select name="Drink">
+                                <option>Coke</option>
+                                <option>Vanilla Coke</option>
+                                <option>Mellow Yellow</option>
+                                <option>Cherry Sprit</option>
+                            </select>
+                        </label>
+                    </form>
                 </div>
-                <form>
-                    <p>Which Drink would you like to order?</p>
-                    <label>Flavor:
-                        <select name="drink_flavor">
-                            <option>Coke</option>
-                            <option>Vanilla Coke </option>
-                            <option>Mellow Yellow</option>
-                            <option>Cherry Sprit</option>
-                        </select>
-                    </label>
-                </form>
-            </div>
-            
-                <div class="card_tail">
+            </main>         
+                <div class="card__tail">
                     <h4>Tips for the team help!</h4>
-                    <!--The following will have an input number box, 
-                        need to bind it above 0 so can't do negative tip 
-                        and have a stepping of 0.5-->
-                    <input class="Custom_Tip" type="number" placeholder="$" min="0" step="0.5"
+                    <input class="custom_ip" type="number" placeholder="$" min="0" step="0.5"
                     onfocus="this.value==this.defaultValue?this.value='':null"/>
                 </div> 
             </div>
     </div>
     <footer>
-        <h5>
-            Restaurant Ordering project
-            <a href="">No link yet, add GitHub?</a>
-        </h5>
+        <h5>Restaurant Ordering project<a href="">No link yet, add GitHub?</a></h5>
     </footer>
-
 </body>
 </html>
