@@ -29,7 +29,7 @@
                     <p>Which Philly Would you like?</p>
                         <label>Full Name: <input name="firstName" type="text"></label>
                         <label>Philly Style:
-                            <select id="entree" name="Entree">
+                            <select id="food" name="Entree">
                                 <option>Classic Philly</option>
                                 <option>Texas Style</option>
                                 <option>The mediterranean</option>
@@ -41,14 +41,28 @@
                     </form>
                     <div class="upside__preference">
                         <label for="Entree">Would you like to double the Meat?</label>
-                        <input type="checkbox" name="Meat" id="Meat">
-                        <label for="Toppings">Would you like to double the toppings?</label>
-                        <input type="checkbox" name="Toppings" id="Toppings">
+                        <input type="checkbox" name="Meat" id="food">
+                        <form name="topping__entry">
+                            <p>Would you like to add any toppings?</p>
+                            <label>Philly_Toppings:
+                                <select id="food" name="Toppings">
+                                    <option>None</option>
+                                    <option>Jalapenos</option>
+                                    <option>Cheese Blend</option>
+                                    <option>Mozzarella Cheese</option>
+                                    <option>Spinage</option>
+                                </select>
+                            </label>
+                        </form>
+                        
                     </div>
+                    <label for="Toppings">Would you like to double the toppings?</label>
+                    <input type="checkbox" name="Toppings" id="food">
                     <form name="side__entry">
                         <p>Which Side would you like?</p>
                         <label>Side:
-                            <select name="Side">
+                            <select id="food" name="Side">
+                                <option>None</option>
                                 <option>Curly fry's</option>
                                 <option>Mozzarella Sticks</option>
                                 <option>Jalapeno bits</option>
@@ -59,7 +73,8 @@
                     <form name="drink__entry">
                         <p>Which Drink would you like to order?</p>
                         <label>Drink:
-                            <select name="Drink">
+                            <select id="food" name="Drink">
+                                <option>None</option>
                                 <option>Coke</option>
                                 <option>Vanilla Coke</option>
                                 <option>Mellow Yellow</option>
