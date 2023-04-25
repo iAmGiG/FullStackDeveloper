@@ -32,9 +32,16 @@ body{
     justify-self: center;
 }
 
-form philly__entree{
+form[name=philly__entree]{
+    font-size: 20px;
     grid-area: 2 / 1 / 3 / 3;
 }
+
+form[name="topping__entry"] [name=Toppings]{
+    margin: 10px;
+    font-size: larger;
+    color: red;
+  }
 
 .foodIcon1{
     justify-self: center;
