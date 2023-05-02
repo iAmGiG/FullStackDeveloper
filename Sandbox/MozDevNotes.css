@@ -6,10 +6,10 @@
     margin: 0;
 }
 
-body{
+body {
     background-color: whitesmoke;
     font-family: 'Barlow Semi Condensed',
-    sans-serif;
+        sans-serif;
     line-height: 1.7;
     font-size: 13px;
 }
@@ -26,9 +26,9 @@ body{
 .red-input:focus {
     background: yellow;
     color: red;
-  }
-  
-  .blue-input:focus {
+}
+
+.blue-input:focus {
     background: yellow;
     color: blue;
-  }
+}
