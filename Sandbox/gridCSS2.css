@@ -4,14 +4,14 @@
     margin: 0;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     height: 100vh;
     background-color: whitesmoke;
-    
+
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'header header header'
         'nav content sidebar'
         'nav footer footer';
@@ -23,26 +23,29 @@ header,
 footer,
 main,
 aside,
-nav{
+nav {
     background-color: cornflowerblue;
     color: white;
     padding: 20px;
     border: skyblue 1px solid;
 }
 
-header{
+header {
     grid-area: header;
 }
 
-nav{
+nav {
     grid-area: nav;
 }
-main{
+
+main {
     grid-area: content;
 }
-aside{
+
+aside {
     grid-area: sidebar;
 }
-footer{
+
+footer {
     grid-area: footer;
 }
