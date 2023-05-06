@@ -1,4 +1,4 @@
-# This project atempts to reflect a functional web site for a modern restaurant
+# This project attempts to reflect a functional web site for a modern restaurant
 
 ## Title
 
@@ -27,7 +27,7 @@ WireFrames/Mockups:
 * [ ] Create Wire frames for the CSS to follow.
 * [ ] Create for each site type
   * [ ] Home
-  * [ ] Menue
+  * [ ] Menu
   * [ ] About
 * [ ] Will put my images of the mock ups in to this project.
 * [ ] Will need to refresh and renforce the Grid/Flexbox tools as to lock down the units and the design.
@@ -46,7 +46,7 @@ Style Guild:
 
 Development Envrionment:
 
-* [x] Plan is to use VS (VSCodium).
+* [x] Plan is to use VScode.
 * [ ] (update list to include extentions and tools, noted either essential or additive.)
 
 Development Workflow:
@@ -78,4 +78,8 @@ Strech goals.
 *Deployment*:
 
 * [ ] Docker deployment to AWS.
-- test001
+
+
+### References
+
+- [git-commit-format] (https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
