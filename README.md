@@ -4,7 +4,7 @@
 
 **Open Restaurant.**
 
-Learning full stack development, using but not limited to Spring, Angular, HTML, and CSS
+Learning full stack development, using but not limited to ~~Spring~~ Node.js, Angular, HTML, and CSS
 
 * Will make the layout and initial design in HTML with CSS as a primar to learn
 * Eventually start building out the back end with spring boot and use PostgreSQL.
