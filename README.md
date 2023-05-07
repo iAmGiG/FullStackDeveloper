@@ -12,6 +12,21 @@ Project Scope:
         * [ ] About: simple about page, but will contain details about the project
           * [ ] maybe use Lorem word gen for template?
 
+
+
+## Instruction 
+
+Run `npm init` to configure the package.
+
+Then do `npm install` to download the packages. 
+
+If the required packages are not installed automatically then run the package name with
+this command `npm install <package-name>`.
+
+Run server `node index.js`. The server will run at port: 4200 (default).
+
+
 ### References
 
 - [git-commit-format] (https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
+- [express] (https://expressjs.com/en/4x/api.html)
