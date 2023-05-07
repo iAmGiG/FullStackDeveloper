@@ -12,6 +12,21 @@ Project Scope:
         * [ ] About: simple about page, but will contain details about the project
           * [ ] maybe use Lorem word gen for template?
 
+
+
+# Agenda
+
+- [x] configure the server
+- [] configure the frontpage
+- [] run server with frontpage
+- [] configure database
+- [] run server with db
+- []  ??
+
+
+
+
 ### References
 
 - [git-commit-format] (https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
+- [express-docs] (https://expressjs.com/en/4x/api.html)
