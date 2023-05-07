@@ -16,7 +16,10 @@ Project Scope:
 
 ## Instruction 
 
-Run `npm init` to configure the package. Then do `npm install` to download the packages. 
+Run `npm init` to configure the package.
+
+Then do `npm install` to download the packages. 
+
 If the required packages are not installed automatically then run the package name with
 this command `npm install <package-name>`.
 
