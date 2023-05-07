@@ -1,8 +1,9 @@
 const express = require("express");
+const port = 4200;
 
 const app = express();
 
-const PORT = 4200;
-app.listen(PORT, () =>{
-    console.log(`Server is running at port: ${PORT}`);
+
+app.listen( port, () =>{
+    console.log(`Server is running at link ==> http://localhost:${port}`);
 })
