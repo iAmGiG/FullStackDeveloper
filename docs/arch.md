@@ -16,3 +16,9 @@ The user must be able to view the menu, choose items (that will then be saved in
 The frontEnd or UI is the main page the user interacts with. The main parts are: title, hyperlinks, color-background.
 
 The hard part will be the interaction with database.
+
+# Issues
+
+P1. Currently the hyperlink is using hardcoded path for the order values. Dev needs to make it dynamic or figure out how this will work in prod setting.
+
+P2. the menu has listed the names of items. Dev requires to make a pop out box (some form) which will contain the information about the burger item.
