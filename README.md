@@ -16,6 +16,8 @@ Project Scope:
 
 ## Instruction 
 
+If this is the first time to run the app, you will require `.env` file.
+
 Run `npm init` to configure the package.
 
 Then do `npm install` to download the packages. 
