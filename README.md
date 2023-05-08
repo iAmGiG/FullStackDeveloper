@@ -3,9 +3,9 @@
 BIG EPICS:
 Project Scope:
 
-* [ ] I want to produce a simple Philly cheese steak restaurant ordering site.
+* [x] I want to produce a simple Philly cheese steak restaurant ordering site.
   * [ ] I want to be able to add and customize an entree, side, and drink (such as a Texas style Philly Cheese wrap (via Buc-ee's)).
-    * [ ] you will land on a simple opening screen with food items that has:
+    * [x] you will land on a simple opening screen with food items that has:
       * [ ] Home, Menue, about
         * [ ] Home contains images of the food and the internal restaurant locations.
         * [ ] Menue contians images and prices of the food with combos suggestions.
