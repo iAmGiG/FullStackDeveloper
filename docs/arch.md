@@ -10,3 +10,9 @@ The user must be able to view the menu, choose items (that will then be saved in
 
   : Keep it simple and practical
 
+
+# FrontEnd
+
+The frontEnd or UI is the main page the user interacts with. The main parts are: title, hyperlinks, color-background.
+
+The hard part will be the interaction with database.

@@ -13,5 +13,5 @@ app.listen( port, () =>{
 })
 
 app.get('/' , (req,res) => {
-    res.sendFile(path.join(__dirname, 'src/front.html'));
+    res.sendFile(path.join(__dirname, 'src/html/front.html'));
 })
