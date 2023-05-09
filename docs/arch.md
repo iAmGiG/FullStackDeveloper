@@ -21,4 +21,5 @@ The hard part will be the interaction with database.
 
 P1. Currently the hyperlink is using hardcoded path for the order values. Dev needs to make it dynamic or figure out how this will work in prod setting.
 
-P2. the menu has listed the names of items. Dev requires to make a pop out box (some form) which will contain the information about the burger item.
+P2. the menu has listed the names of items. Dev requires to make a pop out box (some form) which will contain the information about the burger item. HTML doesn't have the advance feature of pop ups. This will
+require another framework.
