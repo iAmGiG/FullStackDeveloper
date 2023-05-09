@@ -6,13 +6,13 @@
 - [x] configure the server
 - [x] implement UI 
 - [x] run UI with server startup
-- [] add CSS, template and color to UI
-- [] About,Menue,Order,Track
-- [] DB configuration
-- [] Order table in DB
-- [] Implement logic for order table
-- [] CRUD operation in order table
-- [] Track order with uuid
+- [ ] add CSS, template and color to UI
+- [ ] About,Menue,Order,Track
+- [ ] DB configuration
+- [ ] Order table in DB
+- [ ] Implement logic for order table
+- [ ] CRUD operation in order table
+- [ ] Track order with uuid
 
 
 
