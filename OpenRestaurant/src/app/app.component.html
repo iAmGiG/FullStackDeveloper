@@ -1,0 +1,7 @@
+<body>
+  <ul>{{title}} used by {{restaurantName}}</ul>
+  <router-outlet class="Temp1">restaurantCapacity {{restaurantCapacity}}</router-outlet>
+  <button type="button" mat-raised-button color="primary" (click)="checkCapacity()">
+    {{actionButtonLabel}} = {{isFullString}}
+  </button>
+</body>
