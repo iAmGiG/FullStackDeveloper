@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 // import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 // import { AntiHero } from '../../models/anti-hero.interface';
+// import { FormsModule } from '@angular/forms';
 
 type Restaurant = 'Texas Mex-as' | 'Boston' | 'New York' | 'Philly';
 enum RestaurantCoreFood {
@@ -30,6 +31,7 @@ export class AppComponent implements OnInit {
   // form: FormGroup;
   title = 'OpenRestaurant';
   myCoreFood: RestaurantCoreFood = RestaurantCoreFood.bigTexasSteak;
+  myFoodValues = Object.values(RestaurantCoreFood);
   myPricing: RestaurantPricing = RestaurantPricing.bigTexasSteak;
   restaurantType: Restaurant = 'Texas Mex-as';
   restaurantName: string = 'Texas Mex-as';
@@ -39,6 +41,7 @@ export class AppComponent implements OnInit {
     Math.round((this.currentOccupancy / this.restaurantCapacity) * 100)
   );
   isFullString: string = 'Not Yet';
+  isFullBool: boolean = false;
 
   constructor() {}
 
@@ -49,6 +52,7 @@ export class AppComponent implements OnInit {
   checkCapacity() {
     if (this.currentOccupancy >= this.restaurantCapacity) {
       this.isFullString = "We've hit capacity";
+      this.isFullBool = true;
     }
   }
 }
