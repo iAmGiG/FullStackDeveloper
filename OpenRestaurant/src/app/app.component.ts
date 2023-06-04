@@ -1,11 +1,28 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 // import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 // import { AntiHero } from '../../models/anti-hero.interface';
+// import { FormsModule } from '@angular/forms';
 
+type Restaurant = 'Texas Mex-as' | 'Boston' | 'New York' | 'Philly';
+enum RestaurantCoreFood {
+  bigTexasSteak,
+  bigSalad,
+  bigPhilly,
+  bigBostonCreamPie,
+  bigNewYorkPizza,
+}
+enum RestaurantPricing {
+  water = 0,
+  bigTexasSteak = 5,
+  bigSalad = 3,
+  bigPhilly = 4,
+  bigBostonCreamPie = 2,
+  bigNewYorkPizza = 1.99,
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.sass'],
 })
 export class AppComponent implements OnInit {
   @Input() selectedId = '';
@@ -13,24 +30,41 @@ export class AppComponent implements OnInit {
   // @Output() action = new EventEmitter();
   // form: FormGroup;
   title = 'OpenRestaurant';
-  restaurantName: string = 'Texas Mexas';
+  myCoreFood: RestaurantCoreFood = RestaurantCoreFood.bigTexasSteak;
+  myFoodValues = Object.values(RestaurantCoreFood);
+  myPricing: RestaurantPricing = RestaurantPricing.bigTexasSteak;
+  restaurantType: Restaurant = 'Texas Mex-as';
+  restaurantName: string = 'Texas Mex-as';
   restaurantCapacity: number = 142;
   currentOccupancy: number = 65;
-  currentOccupancyPercentaage: number = (this.currentOccupancy / this.restaurantCapacity) * 100
-  isFullString: string = "Not Yet";
+  currentOccupancyPercentage: number = Math.abs(
+    Math.round((this.currentOccupancy / this.restaurantCapacity) * 100)
+  );
+  isFullString: string = 'Not Yet';
+  isFullBool: boolean = false;
 
-  constructor() {
-    
-  }
+  constructor() {}
 
-  ngOnInit(): void{
+  ngOnInit(): void {
     this.checkCapacity();
   }
 
   checkCapacity() {
     if (this.currentOccupancy >= this.restaurantCapacity) {
       this.isFullString = "We've hit capacity";
+      this.isFullBool = true;
     }
   }
+}
 
+// export
+function RestaurantPricingCalculator(
+  RestaurantPricing1: any,
+  RestaurantPricing2: any,
+  tax: any,
+  // ..._fees: any,
+  tip?: any
+): any {
+  // throw new Error('Function not implemented.');
+  return RestaurantPricing1 + RestaurantPricing2 + tax + tip;
 }
