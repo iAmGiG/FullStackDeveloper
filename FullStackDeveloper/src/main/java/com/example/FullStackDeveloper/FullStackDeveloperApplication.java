@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import  org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
+@RestController
 public class FullStackDeveloperApplication {
 
 	public static void main(String[] args) {
@@ -14,8 +15,8 @@ public class FullStackDeveloperApplication {
 		SpringApplication.run(FullStackDeveloperApplication.class, args);
 	}
 
-	@GetMapping("/hola")
-	public String hola(@RequestParam(value = "name", defaultValue = "world") String name) {
+	@GetMapping("/hello")
+	public String hello(@RequestParam(value = "name", defaultValue = "world") String name) {
 		return String.format("Hi %s!" , name);
 	}
 
